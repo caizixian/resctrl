@@ -1,0 +1,21 @@
+[package]
+name = "resctrl"
+version = "0.1.0"
+edition = "2021"
+authors = ["Zixian Cai <u5937495@anu.edu.au>"]
+license = "MIT"
+description = "A simple agent to interact with Linux resctrl"
+repository = "https://github.com/caizixian/resctrl"
+readme = "README.md"
+documentation = "https://docs.rs/resctrl"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "resctrl"
+path = "src/lib.rs"
+crate-type = ["dylib"]
+
+[dependencies]
+ctor = "0.2.5"
+libc = "0.2.148"
